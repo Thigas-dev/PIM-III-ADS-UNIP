@@ -8,14 +8,28 @@
     src: url(../font/Marley\ Antique.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: texto;
+    src: url(../font/Eloura\ Sans.otf) format('truetype');
+}
+
+/* Responsividade (Para celular) */
+@media (max-width: 768px) {
+    .secao-flex {
+        flex-direction: column;
+        /* No celular, o texto fica embaixo da foto */
+    }
+}
+
 body {
-    background-color: #121212;
+    background-color: #181818;
     color: #ffffff;
     font-family: 'Segoe UI', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0px;
     padding: 0px;
+    height: 100vh;
 }
 
 nav {
@@ -71,56 +85,11 @@ nav a {
 }
 
 .container {
-    max-width: 800px;
-    width: 100%;
-}
-
-.grid-servicos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin: 30px 0;
-}
-
-.card {
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #333;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    border-color: #d4af37;
-    /* Cor Ouro/Barbearia */
-}
-
-.card.active {
-    border-color: #d4af37;
-    background: #252525;
-}
-
-.btn-confirmar {
-    background-color: #d4af37;
-    color: #000;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 20px;
-}
-
-input,
-select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #333;
-    background: #1e1e1e;
-    color: white;
-    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 footer {
@@ -132,4 +101,46 @@ footer {
 
 footer p {
     margin: 10px;
+}
+
+/* Configuração das seções que dividem o espaço (Lado a Lado) */
+.secao-flex {
+    display: flex;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 40px;
+}
+
+#sobre img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.secao-flex>div {
+    flex: 1;
+    /* Faz os dois lados terem o mesmo tamanho */
+}
+
+.texto-sobre {
+    align-self: flex-start;
+}
+
+.texto-sobre h1 {
+    font-size: 50px;
+    font-family: Logo;
+    font-weight: normal;
+}
+
+.texto-sobre p {
+    font-size: 22px;
+    font-family: texto;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+/* Seção Padrão (Conteúdo Centralizado) */
+.secao-padrao {
+    text-align: center;
+
 }
