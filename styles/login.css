@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Nav;
+    src: url(../font/BiotripSerif-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Logo;
+    src: url(../font/Marley\ Antique.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../font/Eloura\ Sans.otf) format('truetype');
+}
+
+/* Responsividade (Para celular) */
+@media (max-width: 768px) {
+    .secao-flex {
+        flex-direction: column;
+        /* No celular, o texto fica embaixo da foto */
+    }
+}
+
+body {
+    background-color: #181818;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+nav {
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    height: 10vh;
+
+}
+
+nav li {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+.Logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Logo';
+}
+
+.LogoImg {
+    height: 60px;
+    width: auto;
+    padding-right: 10px;
+
+}
+
+.Links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.LoginB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    gap: 20px;
+    background-color: #131212;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'texto';
+    letter-spacing: 1.5px;
+}
+
+.LoginB a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.LoginB a:hover {
+    color: #888787;
+}
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.Login input {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    background-color: #0a0a0a;
+    color: white;
+}
+
+
+.btn-entrar {
+    background-color: #0a0a0a;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-entrar:hover {
+    background-color: #000000;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0c0c0c;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px;
+}

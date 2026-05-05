@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     margin: 0px;
     padding: 0px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 nav {
@@ -59,7 +59,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 20px;
     font-family: 'Nav';
 }
@@ -68,7 +68,7 @@ nav a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 35px;
     font-family: 'Logo';
 }
@@ -99,17 +99,6 @@ nav a {
     flex: 1;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-footer {
-    background-color: #0c0c0c;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-footer p {
-    margin: 10px;
 }
 
 /* Configuração das seções que dividem o espaço (Lado a Lado) */
@@ -267,8 +256,138 @@ footer p {
     color: #685414;
 }
 
+/* Container Principal */
+.container-agendamento {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    background-color: #0c0c0c;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+/* Campos de Input e Labels */
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.grupo-input label {
+    font-family: 'Nav';
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+.grupo-input input {
+    background: #181818;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'texto';
+    font-size: 16px;
+}
+
+/* Ícone do Calendário */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* Grade de Horários */
+.grade-horarios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Cards de Horário Estilizados */
+.card-horario input {
+    display: none;
+}
+
+.card-horario span {
+    display: block;
+    padding: 10px;
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'texto';
+}
+
+.card-horario input:checked+span {
+    background: #d4af37;
+    color: #000;
+    border-color: #d4af37;
+    font-weight: bold;
+}
+
+.card-horario span:hover {
+    border-color: #d4af37;
+}
+
+/* Botão de Envio */
+.btn-agendar {
+    width: 100%;
+    padding: 15px;
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Nav';
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-agendar:hover {
+    background-color: #bfa030;
+    transform: translateY(-2px);
+}
+
+/* Estilização do Scroll (Webkit) */
+.grade-horarios::-webkit-scrollbar {
+    width: 5px;
+}
+
+.grade-horarios::-webkit-scrollbar-thumb {
+    background: #d4af37;
+    border-radius: 10px;
+}
+
+/* Responsividade Unificada */
+@media (max-width: 768px) {
+    .container-agendamento {
+        margin: 0 20px 50px;
+        padding: 20px;
+    }
+
+    .grade-horarios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 footer a {
     color: #d4af37;
     text-decoration: none;
+}
+
+footer {
+    background-color: #0c0c0c;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px;
 }
