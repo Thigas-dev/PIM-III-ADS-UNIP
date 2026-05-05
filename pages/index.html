@@ -160,7 +160,72 @@
 
             </section>
 
+            <section id="agendar" class="secao">
+                <div class="titulo">
+                    <h1>Agendar Horário</h1>
+                    <p>Escolha o dia e o melhor momento para você:</p>
+                </div>
+                <div class="container-agendamento">
+                    <form class="formulario-agendamento">
+                        <!-- CAMPO DE DATA -->
+                        <div class="grupo-input">
+                            <label for="data">Escolha a Data</label>
+                            <input type="date" id="data" required>
+                        </div>
 
+                        <div class="grupo-input">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="whatsapp">WhatsApp</label>
+                            <input type="tel" id="whatsapp" placeholder="(62) 99999-9999" required>
+                        </div>
+
+                        <!-- GRADE DE HORÁRIOS (8h às 20h) -->
+                        <div class="grupo-input">
+                            <label>Horários Disponíveis</label>
+                            <div class="grade-horarios">
+                                <!-- Manhã -->
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="08:00"><span>08:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="09:00"><span>09:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="10:00"><span>10:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="11:00"><span>11:00</span></label>
+
+                                <!-- Tarde -->
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="12:00"><span>12:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="13:00"><span>13:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="14:00"><span>14:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="15:00"><span>15:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="16:00"><span>16:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="17:00"><span>17:00</span></label>
+
+                                <!-- Noite -->
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="18:00"><span>18:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="19:00"><span>19:00</span></label>
+                                <label class="card-horario"><input type="radio" name="horario"
+                                        value="20:00"><span>20:00</span></label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-agendar">Confirmar Agendamento</button>
+                    </form>
+                </div>
+
+            </section>
 
             <footer>
                 <p>&copy; 2026 Barber Unip. Todos os direitos reservados. <a href="/pages/login.html">admin</a></p>
