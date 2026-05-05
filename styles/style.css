@@ -19,7 +19,13 @@
         flex-direction: column;
         /* No celular, o texto fica embaixo da foto */
     }
+
+    .servico-nome,
+    .servico-preco {
+        font-size: 18px;
+    }
 }
+
 
 body {
     background-color: #181818;
@@ -38,6 +44,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    height: 10vh;
 
 }
 
@@ -76,15 +86,14 @@ nav a {
     gap: 20px;
 }
 
-.titulo {
+.container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: white;
-
+    flex: 1;
+    padding: 0px;
 }
 
-.container {
+.container-sobre {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -111,6 +120,10 @@ footer p {
     gap: 40px;
 }
 
+#sobre {
+    padding-top: 120px;
+}
+
 #sobre img {
     width: 100%;
     height: auto;
@@ -128,19 +141,134 @@ footer p {
 
 .texto-sobre h1 {
     font-size: 50px;
-    font-family: Logo;
+    font-family: 'Logo';
     font-weight: normal;
 }
 
 .texto-sobre p {
     font-size: 22px;
-    font-family: texto;
+    font-family: 'texto';
     font-weight: normal;
     letter-spacing: 1.5px;
+    color: #aaaaaa;
 }
 
-/* Seção Padrão (Conteúdo Centralizado) */
-.secao-padrao {
-    text-align: center;
+/* Seção Padrão*/
 
+.secao {
+    padding: 0px;
+    background-color: #181818;
+    /* Mantendo o padrão do seu body */
+    color: white;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo h1 {
+    font-family: 'Nav';
+    font-size: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.titulo p {
+    font-family: 'texto';
+    font-size: 20px;
+    color: #aaaaaa;
+}
+
+.lista-servicos {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Centraliza a tabela na tela */
+}
+
+.item-servico {
+    display: flex;
+    align-items: baseline;
+    /* Alinha o texto pela base */
+    margin-bottom: 20px;
+}
+
+.servico-nome {
+    font-family: 'texto';
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.servico-linha {
+    flex: 1;
+    /* Faz a linha ocupar todo o espaço central */
+    border-bottom: 2px dotted #444;
+    /* Cria o efeito pontilhado */
+    margin: 0 10px;
+}
+
+.servico-preco {
+    font-family: 'texto';
+    /* Usando sua fonte de destaque */
+    font-size: 22px;
+    color: #d4af37;
+    /* Dourado para destacar o preço */
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    ;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.fotos {
+    width: 30%;
+    font-family: 'nav';
+    font-weight: normal;
+    color: #fff;
+}
+
+.fotos img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px 50px 50px;
+}
+
+.mapa iframe {
+    border: 0;
+    border-radius: 15px;
+    width: 80%;
+    height: 450px;
+}
+
+.mapa h1 {
+    padding-left: 30px;
+}
+
+.mapa a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.mapa a:hover {
+    color: #685414;
+}
+
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
 }
