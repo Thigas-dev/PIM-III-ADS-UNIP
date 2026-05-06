@@ -165,7 +165,7 @@
                     <h1>Agendar Horário</h1>
                     <p>Escolha o dia e o melhor momento para você:</p>
                 </div>
-                <div class="container-agendamento">
+                <div class="agendamentoBloco">
                     <form class="formulario-agendamento">
                         <!-- CAMPO DE DATA -->
                         <div class="grupo-input">
@@ -180,7 +180,7 @@
 
                         <div class="grupo-input">
                             <label for="whatsapp">WhatsApp</label>
-                            <input type="tel" id="whatsapp" placeholder="(62) 99999-9999" required>
+                            <input type="tel" id="whatsapp" placeholder="(62) 99999-9999" maxlength="15" onkeyup="mascaraTelefone(event)" required>
                         </div>
 
                         <!-- GRADE DE HORÁRIOS (8h às 20h) -->

@@ -72,10 +72,135 @@ nav a {
     gap: 20px;
 }
 
-footer a {
-    color: #d4af37;
-    text-decoration: none;
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15vh;
 }
+
+/* Blocos de Seção do Admin */
+.secao-admin-bloco {
+    background-color: #0c0c0c;
+    border-radius: 10px;
+    padding: 20px 0px 00px 0px;
+    border: 1px solid #333;
+    margin-top: 40px;
+    width: 70%;
+}
+
+.titulo-tabela {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.titulo-tabela h2 {
+    font-family: 'Nav';
+    color: #d4af37;
+    margin: 0;
+}
+
+.tabela-admin {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'texto';
+    text-align: left;
+}
+
+.tabela-admin th,
+.tabela-admin td {
+    padding: 12px;
+    border-top: 1px solid #222;
+}
+
+.tabela-admin th{
+    width: 25%;
+    text-align: center;
+    /* Empurra os botões para o fim da tabela */
+    padding-right: 20px;
+    /* Dá um respiro para não colar na borda */
+}
+.tabela-admin td:nth-child(3) {
+    width: 25%;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.tabela-admin th {
+    color: #d4af37;
+    font-weight: normal;
+}
+
+
+/* Inputs Editáveis na Tabela */
+.input-editavel {
+    background-color: #181818;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'texto';
+    width: 90%;
+    font-weight: normal;
+}
+
+.input-editavel:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+/* Botões do Admin */
+.btn-novo {
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'texto';
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.btn-acao {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'texto';
+    margin-right: 5px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+.btn-salvar {
+    background-color: #1a1a1a;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+}
+
+.btn-salvar:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+.btn-cancelar {
+    background-color: #1a1a1a;
+    color: #ff3333;
+    border: 1px solid #ff3333;
+}
+
+.btn-cancelar:hover {
+    background-color: #ff3333;
+    color: #fff;
+
+}
+
 
 footer {
     background-color: #0c0c0c;
