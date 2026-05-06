@@ -44,7 +44,59 @@
     </header>
     <!-- Gerenciamento de Serviços (CRUD) -->
     <div class="container">
-        <section id="gerenciar-servicos" class="secao-admin-bloco">
+        <section id="agendamentos" class="secao-admin-bloco">
+            <div class="titulo-tabela">
+                <h2>Próximos Agendamentos</h2>
+            </div>
+
+            <div class="tabela-responsiva">
+                <table class="tabela-admin">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Horário</th>
+                            <th>Cliente</th>
+                            <th>WhatsApp</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06/05/2026</td>
+                            <td>09:00</td>
+                            <td>Carlos Eduardo</td>
+                            <td>(62) 98888-7777</td>
+                            <td>
+                                <button class="btn-acao btn-salvar">✔ Concluir</button>
+                                <button class="btn-acao btn-cancelar">✖ Cancelar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>06/05/2026</td>
+                            <td>10:00</td>
+                            <td>Marcos Vinícius</td>
+                            <td>(62) 99999-1111</td>
+                            <td>
+                                <button class="btn-acao btn-salvar">✔ Concluir</button>
+                                <button class="btn-acao btn-cancelar">✖ Cancelar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>07/05/2026</td>
+                            <td>14:00</td>
+                            <td>João Pedro</td>
+                            <td>(62) 97777-2222</td>
+                            <td>
+                                <button class="btn-acao btn-salvar">✔ Concluir</button>
+                                <button class="btn-acao btn-cancelar">✖ Cancelar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="servicos" class="secao-admin-bloco">
             <div class="titulo-tabela">
                 <h2>Gerenciar Serviços e Preços</h2>
                 <button class="btn-novo">+ Novo Serviço</button>

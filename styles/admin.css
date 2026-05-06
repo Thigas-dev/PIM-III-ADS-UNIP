@@ -78,7 +78,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 
 /* Blocos de Seção do Admin */
@@ -89,6 +89,7 @@ nav a {
     border: 1px solid #333;
     margin-top: 40px;
     width: 70%;
+    margin-bottom: 10px;
 }
 
 .titulo-tabela {
@@ -116,15 +117,9 @@ nav a {
 .tabela-admin td {
     padding: 12px;
     border-top: 1px solid #222;
+    text-align: center;
 }
 
-.tabela-admin th{
-    width: 25%;
-    text-align: center;
-    /* Empurra os botões para o fim da tabela */
-    padding-right: 20px;
-    /* Dá um respiro para não colar na borda */
-}
 .tabela-admin td:nth-child(3) {
     width: 25%;
     text-align: center;
@@ -173,7 +168,7 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     font-family: 'texto';
-    margin-right: 5px;
+    margin: 10px 5px 10px 5px;
     font-weight: normal;
     letter-spacing: 1.5px;
 }
